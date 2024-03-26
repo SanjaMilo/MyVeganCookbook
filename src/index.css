@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Ephesis", cursive, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: calc(10px + 4vmin);
+  height: 100%;
+  letter-spacing: 1px;
+  background-color: floralwhite;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* The hero image */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./img/1.jpg);
+  height: 65vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1.5rem ridge #00bfa5;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  color: white;
+  letter-spacing: 7px;
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.hero-title {
+  font-size: 4.5rem;
+  margin: 0 0 1rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 1rem 0;
+}
+
+.logo {
+  cursor: pointer;
+  width: fit-content;
+}
+
+.search {
+  width: 98%;
+  padding: 2rem 0 2rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #b39ddb;
+  font-size: 20px;
+  color: #b39ddb;
+}
+.search::placeholder {
+  font-family: "Ephesis";
+  font-size: 30px;
+  color: #673ab7;
+}
+
+.search:focus-visible {
+  outline: 2px solid #b39ddb;
+}
+
+
+
