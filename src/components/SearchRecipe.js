@@ -26,7 +26,7 @@ const SearchRecipe = () => {
       .catch(err => console.log(err));
     };
 
-    searchRecipes(debouncedKeyword);
+    if (debouncedKeyword) searchRecipes(debouncedKeyword);
   }, [debouncedKeyword, dispatch]);
   
   
