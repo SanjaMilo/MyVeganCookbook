@@ -34,7 +34,7 @@ const SavedRecipes = () => {
 
     const fetchSavedRecipes = async () => {
       try {
-        const response = await fetch(`/api/recipes/savedrecipes/${userID}`, {
+        const response = await fetch(`https://myvegancookbook-api.onrender.com/api/recipes/savedrecipes/${userID}`, {
           headers: {
             Authorization: `Bearer ${cookies.access_token}`,
           },
@@ -55,7 +55,7 @@ const SavedRecipes = () => {
   const unSaveRecipe = async (id) => {
     try {
       const response = await fetch(
-        `/api/recipes/savedrecipes/ids/${userID}&${id}`,
+        `https://myvegancookbook-api.onrender.com/api/recipes/savedrecipes/ids/${userID}&${id}`,
         {
           method: "PUT",
           headers: {

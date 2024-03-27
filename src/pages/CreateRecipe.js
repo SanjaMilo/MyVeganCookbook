@@ -64,7 +64,7 @@ const CreateRecipe = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("/api/recipes", {
+      const response = await fetch("https://myvegancookbook-api.onrender.com/api/recipes", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
