@@ -14,7 +14,7 @@ const SearchRecipe = () => {
   useEffect(() => {
 
     const searchRecipes = (value) => {
-      fetch('/api/recipes/search', {
+      fetch('https://myvegancookbook-api.onrender.com/api/recipes/search', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
