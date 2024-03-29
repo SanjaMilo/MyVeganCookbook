@@ -8,7 +8,7 @@ import { useLoginSignup } from "../hooks/useLoginSignup";
 const Signup = () => {
   const headerHeight = useHeaderHeight();
 
-  const url = '/api/user/signup';
+  const url = 'https://myvegancookbook-api.onrender.com/api/user/signup';
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
