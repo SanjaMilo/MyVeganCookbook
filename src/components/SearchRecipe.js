@@ -14,7 +14,7 @@ const SearchRecipe = () => {
   useEffect(() => {
 
     const searchRecipes = (value) => {
-      fetch('https://myvegancookbook-api.onrender.com/api/recipes/search', {
+      fetch('/api/recipes/search', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -34,8 +34,8 @@ const SearchRecipe = () => {
   return (
     <Grid container spacing={3} sx={{ flexGrow: 1, mb: '6rem'}} justifyContent="center"
       alignItems="center">
-      <Grid item xs={8} sx={{textAlign: 'center'}}>
-        <Typography variant="h2" sx={{fontFamily: '"Ephesis"', color: 'info.main', mb: '3rem'}}>
+      <Grid item md={8} xs={12} sx={{textAlign: 'center'}}>
+        <Typography className="search-title" variant="h2" sx={{fontFamily: '"Ephesis"', color: 'info.main', mb: '3rem'}}>
             What are we cooking today?
         </Typography>
         <input

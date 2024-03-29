@@ -51,7 +51,7 @@ const RecipeCard = ({
   };
 
   return (
-    <Grid key={recipe._id} item lg={4} md={4} xs={6}>
+    <Grid key={recipe._id} item lg={4} md={6} xs={12}>
       <Card>
         <CardHeader
           avatar={
@@ -96,7 +96,7 @@ const RecipeCard = ({
           >
             {recipe.title}
           </Typography>
-          {recipe.tags.length > 0 &&
+          {(recipe.tags?.length > 0) &&
             recipe.tags.map((tag, index) => (
               <Typography
                 key={index}

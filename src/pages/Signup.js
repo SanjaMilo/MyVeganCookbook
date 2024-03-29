@@ -8,7 +8,7 @@ import { useLoginSignup } from "../hooks/useLoginSignup";
 const Signup = () => {
   const headerHeight = useHeaderHeight();
 
-  const url = 'https://myvegancookbook-api.onrender.com/api/user/signup';
+  const url = '/api/user/signup';
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -30,7 +30,7 @@ const Signup = () => {
           pb: "70px",
         }}
       >
-        <Grid item xs={8} sx={{ textAlign: "center" }}>
+        <Grid item xs={12} sx={{ textAlign: "center" }}>
           <Typography
             variant="h4"
             component="div"
@@ -42,7 +42,7 @@ const Signup = () => {
             Sign Up:
           </Typography>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item lg={6} md={6} xs={12}>
         <UserForm
             submitForm={submitForm}
             email={email}

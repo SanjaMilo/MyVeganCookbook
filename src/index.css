@@ -59,6 +59,10 @@ p {
   width: fit-content;
 }
 
+.user-btn {
+  text-wrap: nowrap;
+}
+
 .search {
   width: 98%;
   padding: 2rem 0 2rem 1rem;
@@ -67,6 +71,7 @@ p {
   font-size: 20px;
   color: #b39ddb;
 }
+
 .search::placeholder {
   font-family: "Ephesis";
   font-size: 30px;
@@ -77,5 +82,42 @@ p {
   outline: 2px solid #b39ddb;
 }
 
+@media only screen and (max-width: 750px) {
+  .hero-image {
+    height: 90vh;
+  }
 
+  .logo {
+    font-size: 2rem !important;
+  }
+}
 
+@media only screen and (max-width: 525px) {
+  .logo {
+    text-wrap: wrap !important;
+    margin-right: 1rem !important;
+  }
+
+  .user-btn {
+    font-size: 0.75rem !important;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .intro {
+    font-size: 2rem !important;
+  }
+
+  .search-title {
+    font-size: 2.2rem !important;
+  }
+
+  .search::placeholder {
+    font-size: 1.5rem !important;
+  }
+}
